@@ -1,0 +1,177 @@
+/* Header styles */
+.header-bar {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adds space on left and right */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 60px; /* Set a fixed height for the header bar */
+    background-color: #20202000; /* Ensure a background colour for visibility */
+  }
+  
+.header-link {
+color: #535353;
+font-size: 20px;
+text-decoration: none;
+font-weight: bold;
+margin-left: 20px;
+}
+
+.header-link:hover {
+text-decoration: #2e2e2e underline;
+}
+
+/* Dropdown menu styles */
+.dropdown {
+position: relative;
+}
+
+.dropbtn {
+background-color: #202020;
+color: white;
+padding: 8px 16px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+margin-right: 20px;
+}
+
+.dropbtn:hover {
+background-color: #333;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+right: 0;
+background-color: #1e1e1e;
+border: 1px solid #535353;
+border-radius: 5px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+z-index: 1001;
+min-width: 200px;
+max-height: 380px; /* Set a maximum height for the dropdown */
+overflow-y: auto; /* Enable vertical scrolling */
+padding: 10px 0;
+}
+
+.dropdown-content a {
+color: white;
+text-decoration: none;
+padding: 8px 16px;
+display: block;
+font-size: 14px;
+}
+
+.dropdown-content a:hover {
+background-color: #535353;
+}
+
+.dropdown.show .dropdown-content {
+display: block;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%; 
+    max-width: 600px;
+    margin-top: 60px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+h1 {
+    margin: 10px;
+    font-size: 2.4rem;
+    color: #ffffff;
+}
+
+h2 {
+    margin-bottom: 15px;
+    margin-top: 30px;
+    font-size: 2.2rem;
+    color: #ffffff;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 35px;
+    background-color: #2a2a2a;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 10px 0;
+    border: 1px solid #3a3a3a;
+}
+
+.progress {
+    height: 100%;
+    width: 0;
+}
+
+#day-progress {
+    background-color: #fdd835;
+}
+
+#week-progress {
+    background-color: #66bb6a;
+}
+
+#month-progress {
+    background-color: #ffa726;
+}
+
+#year-progress {
+    background-color: #42a5f5;
+}
+
+p {
+    margin: 5px 0;
+    font-size: 1.3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        max-width: 300px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        margin-top: 20px;
+        margin-bottom: 20px;   }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .progress-bar {
+        height: 30px;
+    }
+}
