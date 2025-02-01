@@ -2,6 +2,8 @@
 
 A simple browser app that displays real-time progress bars showing the current day's, week's, month's, and year's progress.
 
+![App Image](Non-App/App%20Image.png)
+
 ## Features
 
 - Displays the percentage progress for the current day, week, month, and year.
